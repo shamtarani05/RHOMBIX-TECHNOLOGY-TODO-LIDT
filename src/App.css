@@ -1,0 +1,138 @@
+/* General Styles */
+.addtodo {
+  width: 90%;
+  max-width: 600px;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1vw auto;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5vw;
+  background: linear-gradient(145deg, #e0f7fa, #b2ebf2);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 60px;
+}
+
+.input {
+  width: 70%;
+  height: 7vh;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding: 0.5vw;
+  margin-right: 1vw;
+  font-size: 1rem;
+  background: #f0f0f0;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+}
+
+.todoapp {
+  background: linear-gradient(145deg, #ffab91, #ffccbc);
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 2vw;
+  border-radius: 16px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15), -6px -6px 12px rgba(255, 255, 255, 0.8);
+}
+
+.todoapp h1 {
+  text-align: center;
+  color: #00796b;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
+ background-color:  rgb(205, 193, 255);
+}
+
+/* To-do List Item Styling */
+.todolist {
+  background: linear-gradient(145deg, #e0f7fa, #b2ebf2);
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1vw auto;
+  padding: 1vw;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.8);
+}
+
+.todolist p {
+  width: 60%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #37474f;
+}
+
+/* Buttons Styling */
+.Edit, .Delete, .Add, .Completed {
+  height: 6vh;
+  width: 18%;
+  min-width: 50px;
+  max-width: 100px;
+  background: linear-gradient(145deg, #00796b, #004d40);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), -2px -2px 5px rgba(255, 255, 255, 0.3);
+  margin-right: .5vw;
+}
+
+.Edit:hover, .Delete:hover, .Add:hover, .Completed:hover {
+  background: linear-gradient(145deg, #004d40, #00796b);
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .addtodo, .todolist {
+    width: 95%;
+  }
+
+  .input {
+    width: 60%;
+  }
+
+  .Edit, .Delete, .Add, .Completed {
+    width: 22%;
+  }
+
+  .todoapp {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .addtodo, .todolist {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1vw;
+  }
+
+  .input {
+    width: 100%;
+    margin: 0 0 1vw 0;
+  }
+
+  .Edit, .Delete, .Add, .Completed {
+    width: 100%;
+    margin: 0.5vw 0;
+  }
+}
